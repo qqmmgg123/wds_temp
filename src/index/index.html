@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- PC -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit"><!-- 让部分国产浏览器默认采用高速模式(国内浏览器厂商一般都支持兼容模式（即 IE 内核）和高速模式（即 webkit 内核），不幸的是，所有国产浏览器都是默认使用兼容模式。目前只有360浏览器支持此 <meta> 标签。) -->
+    <meta name="description" content="">
+
+    <!-- mobile -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+
+    <title>资讯</title>
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1098363_kifczvbkrn.css" />
+    <script type="text/javascript">
+      window.openPage = function  (type, id, url, params = {}, global_link) {
+        if (window.webkit){
+          if (window.webkit.messageHandlers.openAppPage){
+            window.webkit.messageHandlers.openAppPage.postMessage({
+              type,
+              id,
+              url,
+              params,
+              global_link
+            })
+          }
+        } else if (window.jsCallback && window.jsCallback.openAppPage) {
+          window.jsCallback.openAppPage(JSON.stringify({
+            type,
+            id,
+            url,
+            params,
+            global_link
+          }))
+        }
+      }
+      window.openAppFunc = function(type, id, url, params = {}, isLink = false, global_link) {
+        if (!window._IS_PPB_APP && isLink) {
+          window.location.href = url
+        } else {
+          openPage(type, id, url, params, global_link)
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="choice">
+      <div class="choice-title">
+        <h3>编辑精选</h3>
+        <h4>
+          <em>往期精选</em>
+          <i class="iconfont icon-youjiantou1"></i>
+        </h4>
+      </div>
+      <div class="choice-slide">
+        <ul>
+          <li>
+            <div class="choice-card">
+              <!--这里记得裁切七牛图片-->
+              <div 
+                style="background-image: url(https://dns1.cinehello.com/boards/default_package/3.jpg?imageMogr2/auto-orient|imageMogr2/quality/90!/thumbnail/336x142);"
+                class="card-poster"
+              ></div>
+              <div class="card-info">
+                <h1 class="card-title">
+                  又见胶片电影！《阳台上》一个弱者报复弱者的故事 | 专访
+                </h1>
+                <h2 class="card-summary">
+                  从《钢的琴》到《阳台上》，张猛一直在坚持用胶片，而这也是张猛认为拍电影有魅力的地方
+                </h2>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="choice-card">
+              <div class="card-poster"></div>
+              <div class="card-info">
+                <h1 class="card-title">
+                  又见胶片电影！《阳台上》一个弱者报复弱者的故事 | 专访
+                </h1>
+                <h2 class="card-summary">
+                  从《钢的琴》到《阳台上》，张猛一直在坚持用胶片，而这也是张猛认为拍电影有魅力的地方
+                </h2>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="choice-card">
+              <div class="card-poster"></div>
+              <div class="card-info">
+                <h1 class="card-title">
+                  又见胶片电影！《阳台上》一个弱者报复弱者的故事 | 专访
+                </h1>
+                <h2 class="card-summary">
+                  从《钢的琴》到《阳台上》，张猛一直在坚持用胶片，而这也是张猛认为拍电影有魅力的地方
+                </h2>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="news">
+      <div class="news-swipe-bar">
+        <ul>
+          <li id="" class="active">
+            <h4>头条</h4>
+          </li>
+          <li id="movie">
+            <h4>电影</h4>
+          </li>
+          <li id="media">
+            <h4>媒体</h4>
+          </li>
+          <li id="creative">
+            <h4>创意</h4>
+          </li>
+          <li id="tv">
+            <h4>电视</h4>
+          </li>
+          <li id="wedding">
+            <h4>婚/企</h4>
+          </li>
+          <li id="other">
+            <h4>综合</h4>
+          </li>
+          <li id="job">
+            <h4>招聘</h4>
+          </li>
+        </ul>
+      </div>
+      <ul class="new-list">
+        <li>
+          <a href="#">
+            <!--这里记得裁切七牛图片-->
+            <div 
+              class="news-pic"
+              style="background-image: url(https://dns1.cinehello.com/boards/default_package/3.jpg?imageMogr2/auto-orient|imageMogr2/quality/90!/thumbnail/161x90);"
+            ></div>
+            <div class="news-info">
+              <h2>重磅发布|7寸监视器-百视悦R7</h2>
+              <h3>影视工业网VIP商城活水来</h3>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!--这里记得裁切七牛图片-->
+            <div 
+              class="news-pic"
+              style="background-image: url(https://dns1.cinehello.com/boards/default_package/3.jpg?imageMogr2/auto-orient|imageMogr2/quality/90!/thumbnail/161x90);"
+            ></div>
+            <div class="news-info">
+              <h2>重磅发布|7寸监视器-百视悦R7</h2>
+              <h3>影视工业网VIP商城活水来</h3>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!--这里记得裁切七牛图片-->
+            <div 
+              class="news-pic"
+              style="background-image: url(https://dns1.cinehello.com/boards/default_package/3.jpg?imageMogr2/auto-orient|imageMogr2/quality/90!/thumbnail/161x90);"
+            ></div>
+            <div class="news-info">
+              <h2>重磅发布|7寸监视器-百视悦R7</h2>
+              <h3>影视工业网VIP商城活水来</h3>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="bottom-tab">
+      <li>首页</li>
+      <li>CSC</li>
+      <li>课程库</li>
+      <li>我的</li>
+    </ul>
+  </body>
+</html>

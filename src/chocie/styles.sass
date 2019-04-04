@@ -1,0 +1,67 @@
+$class-slug: h !default
+
+body
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, PingFang SC, Microsoft YaHei, 微软雅黑, STHeiti, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif
+  padding: 0
+  margin: 0
+  color: #222
+
+@for $i from 1 through 4
+  #{$class-slug}#{$i}
+    border: none
+    padding: 0
+    margin: 0
+    font-weight: normal
+
+ul, li
+  list-style: none
+  padding: 0
+  margin: 0
+
+.choice-slide 
+  margin-top: 20px
+  display: flex
+  ul
+    flex: 1
+    padding: 0 20px 10px
+    li
+      margin-right: 10px
+      margin-bottom: 15px
+      &:last-child
+        margin-right: 0
+    .choice-card
+      margin: 0 auto;
+      overflow: hidden
+      width: 336px
+      height: 270px
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1)
+      border-radius: 2px
+      .card-poster
+        height: 142px
+        background-color: #f0f0f0
+        background-position: center
+        background-size: cover
+      .card-info
+        padding: 15px
+        .card-title
+          font-size: 18px
+          line-height: 24px
+        .card-summary
+          margin-top: 15px
+          color: #999
+          font-size: 12px
+          letter-spacing: 1px
+          line-height: 18px
+
+.card-title, .card-summary
+  overflow : hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical
+
+.loading, .no-more 
+  text-align: center
+  padding: 20px
+  color: #999
+  font-size: 14px
